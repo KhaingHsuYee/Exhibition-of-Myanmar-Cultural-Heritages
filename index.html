@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+</head>
+<body id="home">
+    <nav class="nav sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-11">
+                    <a href="index.html" class="logo">Myanmar</a>
+                </div>
+                <div class="col-md-1">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="destinations.html">Destinations</a>
+                        <a href="costumes.html">Costumes</a>
+                        <a href="food.html">Food</a>
+                        <a href="products.html">Products</a>
+                        <a href="festivals.html">Festivals</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="FAQs.html">FAQs</a>   
+                        <a href="about_us.html">About us</a>
+                      </div>
+                      <span style="font-size:30px;cursor:pointer; position: absolute;top: 10px;" onclick="openNav()">&#9776;</span>
+    
+                    <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                    }
+    
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                   
+                    document.body.style.backgroundColor = "white";
+                    }
+                    </script>
+                </div>
+                             
+                    
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/home_bg1.jpg" style="width:100%" class="bg_img" height="800px" >
+            <div class="text">
+              <h3 class="hero_subtitle">Welcome To Myanmar</h3>
+              <h1 class="hero_title">DO COME &amp; VISIT</h1>
+              <a href="gallery.html">
+                <button class="hero_btn">Discover More</button>
+              </a>
+            </div>
+            </div>
+            
+    
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/home_bg2.jpg" style="width:100%" height="800px">
+            <div class="text">
+                <h3 class="hero_subtitle">Welcome To Myanmar</h3>
+                <h1 class="hero_title">DO COME &amp; VISIT</h1>
+                <a href="gallery.html">
+                  <button class="hero_btn">Discover More</button>
+                </a>
+            </div>
+            </div>
+    
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/home_bg3.jpg" style="width:100%" height="800px">
+            <div class="text">
+                <h3 class="hero_subtitle">Welcome To Myanmar</h3>
+                <h1 class="hero_title">DO COME &amp; VISIT</h1>
+                <a href="gallery.html">
+                  <button class="hero_btn">Discover More</button>
+                </a>
+            </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/home_bg4.jpg" style="width:100%" height="800px">
+                <div class="text">
+                    <h3 class="hero_subtitle">Welcome To Myanmar</h3>
+                    <h1 class="hero_title">DO COME &amp; VISIT</h1>
+                    <a href="gallery.html">
+                      <button class="hero_btn">Discover More</button>
+                    </a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/home_bg5.jpg" style="width:100%" height="800px">
+                <div class="text">
+                    <h3 class="hero_subtitle">Welcome To Myanmar</h3>
+                    <h1 class="hero_title">DO COME &amp; VISIT</h1>
+                    <a href="gallery.html">
+                      <button class="hero_btn">Discover More</button>
+                    </a>
+                </div>
+           </div>
+           <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/home_bg6.jpg" style="width:100%" height="800px">
+            <div class="text">
+                <h3 class="hero_subtitle">Welcome To Myanmar</h3>
+                <h1 class="hero_title">DO COME &amp; VISIT</h1>
+                <a href="gallery.html">
+                  <button class="hero_btn">Discover More</button>
+                </a>
+            </div>
+       </div>
+    
+       </div>
+       <br>
+    
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+            }
+            
+        </script>
+    </div>
+
+
+    <div class="container" id="main">
+        <div class="about">
+            <div class="row">
+                <h2 class="content_title">About Myanmar</h2>
+                <p class="content_p">Myanmar, also called Burma, is a country, located in the western portion of mainland Southeast Asia.It is an impressive list of culture and traditions that mark the life of the Myanmarese. The months are packed with exciting festivals, delicious food, and beautiful traditional crafts.The country is home to important religious sites for Buddhists worldwide. Experience the spiritual and the supernatural in temples, pagodas and monasteries across the lush landscape.Flush with lush forests decorating green mountains, and magnificent bodies of water teeming with endemic species, the country is perfect for nature lovers.More than its rich recent historical past, Myanmar is home to the ancient Pyu cities as well as rare archaeological finds dating back to the Neolithic period.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="menu">
+            <div class="row">
+                <h3 class="menu_title">UNIQUE FEATURES</h3>
+            </div>
+            <div class="row">
+                <div class="col-md col-4 menu_img">
+                    <a href="destinations.html">
+                        <img src="images/sites.jpeg" alt="Places of Interest" class="img_responsive">
+                        <div class="overlay">
+                            Places of Interest
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md col-4 menu_img">
+                    <a href="costumes.html">
+                        <img src="images/costumes.jpg" alt="Traditional Costumes" class="img_responsive">
+                        <div class="overlay">
+                            Traditional Costumes
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md col-4 menu_img">
+                    <a href="food.html">
+                        <img src="images/food1.jpg" alt="Delicious Traditional Food"
+                        class="img_responsive">
+                        <div class="overlay">
+                            Traditional Food
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md col-6 menu_img">
+                    <a href="products.html">
+                        <img src="images/product.jpg" alt="Local Products" class="img_responsive">
+                        <div class="overlay">
+                            Local Products
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md col-6 menu_img">
+                    <a href="festivals.html">
+                        <img src="images/customs.jpg" alt="Festivals" class="img_responsive">
+                        <div class="overlay">
+                            Festivals
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+            
+   </div>
+   <footer>
+    <div class="container">
+       <h2 class="footer_header">For More Information</h2>
+       
+       <div class="row">
+           <div class="col-md-5">
+              <h3>Contact Info</h3>
+               <i class="fa-solid fa-location-dot info_item"></i>
+               <span>Office Building No 33, Ministry of Hotels and Tourism, Nay Pyi Taw, Republic of the Union of Myanmar.</span>
+               <br>
+               <i class="fa-solid fa-phone info_item"></i>
+               <span>+95673406458, +95673406247 +95 673 406 129</span>
+               <br>
+               <i class="fa-solid fa-envelope info_item"></i>
+               <span>info@tourism.gov.mm</span>
+
+            </div>
+            <div class="col-md-5 offset-md-2 vital">
+                <h3>Vital Info</h3>
+                <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                <span><a href="https://tourism.gov.mm/hotels-resorts/">Accomodation</a></span>
+                <br>
+                <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                <span><a href="https://tourism.gov.mm/embassies-missions/myanmar-missions/">Embassies</a></span>
+                <br>
+                <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                <span><a href="https://tourism.gov.mm/traveller-tips/">Traveller Tips</a></span>
+                <br>
+                <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                <span><a href="https://tourism.gov.mm/articles/">Articles</a></span>
+                
+            </div>
+            
+       </div>
+       <div class="row">
+            <div class="col-md-4 offset-md-4  social_item">
+              
+              <a href="https://www.facebook.com/moht.mm">
+                  <i class="fa-brands fa-facebook share_item"></i>
+              </a>
+              <a href="https://www.youtube.com/user/mohtmm">
+                  <i class="fa-brands fa-youtube share_item"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/mohtmm">
+                  <i class="fa-brands fa-linkedin-in share_item"></i>
+              </a>
+              <a href="https://www.instagram.com/tourisminmyanmar.com.mm/">
+                  <i class="fa-brands fa-instagram share_item"></i>
+              </a>
+          </div>
+       </div>
+       <div class="row reference">
+          <div class="col-md-4 offset-md-4">
+              <p>
+                According to the Ministry of Hotels and Tourism(Myanmar) <br>
+                <a href="https://tourism.gov.mm/"><i>https://tourism.gov.mm/</i></a>
+              </p>
+              
+          </div>
+       </div>
+    </div>
+</footer>
+    
+</body>
+</html> 

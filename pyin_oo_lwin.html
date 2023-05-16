@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyin Oo Lwin</title> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="resp_nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        
+   
+</head>
+<body id="PyinOoLwin">
+    <div class="topnav sticky_top" id="myTopnav" style="background-color: #bbb;z-index: 1;">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="food.html">Traditional Food</a>
+        <a href="costumes.html">Traditional Costumes</a>
+        <div class="dropDown">
+          <button class="dropbtn"><a href="products.html">Products</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropDown-content">
+            <a href="arts_and_crafts.html">Arts and Crafts</a>
+            <a href="pottery&others.html">Pottery and Others</a>
+            <a href="Gold & Silverware.html">Gold ,Silverware and Embroidery</a>
+            <a href="jewellery.html">Jewellery</a>
+          </div>
+        </div>
+        <a href="festivals.html">Festivals</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <br clear="both">
+     </div>
+     <div id="img_gallery" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#img_gallery" data-slide-to="0" class="active"></li>
+          <li data-target="#img_gallery" data-slide-to="1"></li>
+          <li data-target="#img_gallery" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="height:700px">
+          <div class="carousel-item active">
+            <img src="images/mahaAntHtooKanThar.jpg" class="d-block w-100" alt="Pyin Oo Lwin">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-size: 130px; margin-bottom:500px;">Pyin Oo Lwin</h1>         
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/governorHouse.jpg" class="d-block w-100" alt="Pyin Oo Lwin">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-size: 130px; margin-bottom:400px;">Pyin Oo Lwin</h1>         
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/POL_bg1.jpg" class="d-block w-100" alt="Pyin Oo Lwin">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-size: 130px; margin-bottom:500px; color: #ccc;">Pyin Oo Lwin</h1>         
+            </div>
+          </div>
+         
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#img_gallery" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#img_gallery" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+ 
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <h2 class="content_title">The Best Things to do in Pyin Oo Lwin</h2>
+                <p class="content_p">Pyin Oo Lwin will take you back to 19th century Britain with its colonial red-coloured buildings and horse-driven 
+                    carriages.owever,the buildings are not like the colonial buildings of Yangon and Mandalay.They are cute brick structures 
+                    that will surely win your heart.Pyin Oo Lwin is home to the historic National Kandawgyi Botanical Gardens,the country's 
+                    largest Botanical site established in 1915.This garden contains 514 species of indigenous trees and 74 foreign species,as 
+                    well as 300 types of orchids and 25 different roses.The garden have been modelled after the famous Kew Gardens of London.The 
+                    best way to enjoy Pyin Oo Lwin is to simply take a walk and immerse yourself in the hilly atmosphere.</p>
+                
+            </div>
+            <div class="place_list">
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/mahaAntHtooKanThar.jpg" alt="Mahar Antt Htoo Kan Thar Pagoda" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">1.Mahar Antt Htoo Kan Thar Pagoda</h4>
+                            <p class="place_p">
+                                The building of this Pagoda has a history of its own. The reason was that three marble Buddha Images sculpted 
+                                in Mandalay were being transported to their planned destination in China. On this journey, one of the Buddha 
+                                statues fell down from the truck and could not be reloaded due to its weight. After many attempts, this Image 
+                                was left behind and the other two were taken on their way. A local Buddhist monk decided he would try faith. 
+                                He sat for 7 days on this image and preached to the locals and recited teachings of Buddha. After 7 days the 
+                                image was apparently easily lifted and placed in its current location and the local people built a pagoda as 
+                                an offering to Buddha.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/kandaw_gyi.jpg" alt="Kan Daw Gyi Botanical Garden" style="height: 400px;" class="img_responsive">
+                            </a>
+                            <h4 class="place_title">2.Behold the Kan Daw Gyi Botanical Garden</h4>
+                            <p class="place_p">
+                                The National Kandawgyi Gardens (formerly National Botanical Gardens) is located in the Alpine town about
+                                 1.5 km south of Pyin Oo Lwin (formerly Maymyo), Myanmar. It was first founded by Alex Roger, a forest research
+                                  officer, with the aid of Lady Cuffe, the botanist in 1915. It was modelled after the Kew Gardens of England.
+                                   The original area of the Botanical Garden was 170 acres of land and 70 acres of water spread totaling 240 
+                                   acres. The government declared as a state-regonized garden in 1917. In 1924, the site was declared as 
+                                   a Goverment Forest Reserve. The garden has many collection of flora, including foreign species, orchids
+                                    of various species in orchid garden, dahlia gardens, rose gardens, many exotic fruits and shady trees.
+                                     In 2000, the garden was upgraded to be a recreation garden and renamed it “Kandawgyi National Gardens”.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/kandawkalay.jpg" alt="Kandawkalay lake" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">3.Kandawkalay lake</h4>
+                            <p class="place_p">This beautiful lake is only a 20-30 minute walk from the centre of Pyin Oo Lwin.It is a wonderful place to visit 
+                                in the evening at sunset time and could be done after a trip to the Kandawgyi Botanical Gardens.
+                            
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/nationalLandMarks.jpg" alt="National Landmarks Garden" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">4.National Landmarks Garden</h4>
+                            <p class="place_p">
+                                Just before the Kandawgyi National Botanical Gardens is another must-see attractions,the National Landmarks Garden.It consists 
+                                of scale models of well-known Landmarks from each State in Myanmar spread over 50acres of parkland.This extensive hilly park 
+                                is dotted with representations of famous landmarks from around Myanmar. It's pretty tacky, but if you haven't 
+                                got time to tour the entire country. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/horseCarriage.jpg" alt="horse carriage" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">5.Horse Carriage</h4>
+                            <p class="place_p">
+                                Wander around Pyin Oo Lwin town centre for a little while and you’ll notice a rather bizarre sight: horses hitched up to 
+                                old-fashioned carriages painted in vivid pinks, greens, purples and reds. Adding to the bizarre time-travel sense of the 
+                                town, this is an experience not to be missed.Hop on and enjoy a ride.This is the best way to see the town.And it's fun too.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/purcelTower.jpg" alt="Purcell Tower" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">6.Purcell Tower</h4>
+                            <p class="place_p">
+                                Situated in the heart of the town of Pyin Oo Lwin,Purcell Tower is one of the most peculiar tourist places in Myanmar.The 
+                                clock was created in celebration of the Silver Jubilee of the rule of King George V of Britain.Though there are many stories 
+                                behind the making of the tower,it still rings the tune of Big Ben and plays 16 notes before the hour,making the visit even 
+                                more delightful.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/colonial-architect.jpg" alt="Colonial architecture" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">7.Colonial architecture</h4>
+                            <p class="place_p">
+                                There are many British colonial houses and Christian churches in Pyin Oo Lwin.Most of the colonial houses are situated 
+                                at the south end of the circular road.Wooden summer cottages and brick-and-timber houses characterise the architecture in 
+                                Pyin Oo Lwin,which is quite unlike the grand colonial edifices found in Yangon or Mandalay.It's almost like stepping into 19th century England.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/governorHouse.jpg" alt="Governor House" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">8.Governor House</h4>
+                            <p class="place_p">
+                                The original Governor House at  Pyin Oo Lwin (May Myo) was destroyed during World War ll destruction. The New Governor
+                                House was reconstructed by Htoo Com.Ltd.The new house is built on the foundation of the old house. The ambition of reconstruction is
+                                to get the original form and  the real atmosphere of the original building for everyone who look this house.If you do one day trip to 
+                                Pyinoolwin from Mandalay , you definitely have to go to this place.But you need to pay entrance fee 2 USD per person if you like to go 
+                                inside the building and it is still worth to visit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/decemberCafe.jpg" alt="December garden" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">9.December Cafe and Milk Bar</h4>
+                            <p class="place_p">
+                                Situated on the way of May Myo-Lashio Road as a garden or restaurants.Relaxing with flowers and Strawberry fields as one stopping 
+                                place.Having lunch or snacks with fresh milk be appeased.Their favorite menu is fresh milk from dairy farm at behind of the garden.
+                                Also get experience how they farm for dairy cattle.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/bambooCafe.jpg" alt="Bamboo Cafe&Restaurant" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">10.Bamboo Cafe & Restaurant</h4>
+                            <p class="place_p">
+                                The Bamboo Cafe and Restaurant located in the beautiful National Kandawgyi Gardens,a perfect place to enjoy the view while 
+                                dining.All the menus are available at a reasonable price and the staffs are well trained to serve you good services.The 
+                                decoration is simple but compact and attractive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/peikChinMyaung.jpg" alt="Peik Chin Myaung Cave" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">11.Peik Chin Myaung Cave</h4>
+                            <p class="place_p">
+                                Peik Chin Myaung Cave is located on the Lashio road near Wetwun village,12 miles east of Pyin Oo Lwin  town.It is a limestone 
+                                cave estimated between 230 million and 310 million years old.The cave is called Peik Chin Myaung as plenty of Peik Chin plants 
+                                used to grow there.The long cave is filled with so many Buddha images and pagodas in various sizes and position at every 
+                            corners and niches.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/croftOrganic.jpg" alt="Croft Organic farm" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">12.Croft Organic Farm</h4>
+                            <p class="place_p">
+                                Croft Organic Farm is one of the famous places in Pyin Oo Lwin.Both local customers and tourists don't miss to visit there when 
+                                they are in Pyin Oo Lwin.Camp name is "Le Camp De Vacances".Near National Kandawgyi Garden,Pyin Oo Lwin,May Myo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/pwe kauk.jpg" alt="Pwal Kaut waterfall" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">13.Pwal Kaut Waterfall</h4>
+                            <p class="place_p">
+                                The Pwal Kaut waterfalls is a very pleasant picinic spot in Pyin Oo Lwin where many Myanmar families come for a picinic.Pwal 
+                                Kaut or B.E waterfalls is also known as Hampshire Falls in British times.It is located on the way to Laswahio and not too 
+                                far from Pyin Oo Lwin.Pwal Kaut stunned by it's natural beauty and breathtaking scenery.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/decemberFarmWaterfall.jpg" alt="December Farm Waterfall" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">14.December Farm Waterfall</h4>
+                            <p class="place_p">
+                            This waterfall was discovered recently.It is located on a famous farm named in December.You wll walk along the lovely road with 
+                            Greenland.The water was drizzling like a sprinkler.Favorite place for young people.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="two_places">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/deedoke.jpg" alt="Dee Doke Waterfall" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">15.Dee Doke Waterfall</h4>
+                            <p class="place_p">
+                            Amazing waterfall with a blue color.It is located in near Own Chaw village.Now,it is easier to get there.It is more like 
+                            a blue pool than waterfall.The waterfall has 10 layers and you can swim every single of the pool.And,the perfect place to take a 
+                            dip.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="gallery.html">
+                                <img src="images/dattawgyaik.jpg" alt="Dattawgyaik Waterfall" class="img_responsive" style="height: 400px;">
+                            </a>
+                            <h4 class="place_title">16.Dattawgyaik Waterfall(Annisakan Waterfall)</h4>
+                            <p class="place_p">
+                                At an impressive 120m tall,this Waterfall is genuinely extremely impressive and a little terrifying if you get up close.The 
+                                spray from the Waterfalls dampens everything in the area.The ominous plunge pool is not safe for swimming.A visit to Dattawgyaik
+                                Waterfall is a must do if you're in Pyin Oo Lwin.
+                            </p>
+                        </div>
+                    </div>
+                </div>                      
+            </div>
+        </div>
+    </div>
+    
+      <footer>
+        <div class="container">
+           <h2 class="footer_header">For More Information</h2>
+           
+           <div class="row">
+               <div class="col-md-5">
+                  <h3>Contact Info</h3>
+                   <i class="fa-solid fa-location-dot info_item"></i>
+                   <span>Office Building No 33, Ministry of Hotels and Tourism, Nay Pyi Taw, Republic of the Union of Myanmar.</span>
+                   <br>
+                   <i class="fa-solid fa-phone info_item"></i>
+                   <span>+95673406458, +95673406247 +95 673 406 129</span>
+                   <br>
+                   <i class="fa-solid fa-envelope info_item"></i>
+                   <span>info@tourism.gov.mm</span>
+
+                </div>
+                <div class="col-md-5 offset-md-2 vital">
+                    <h3>Vital Info</h3>
+                    <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                    <span><a href="https://tourism.gov.mm/hotels-resorts/">Accomodation</a></span>
+                    <br>
+                    <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                    <span><a href="https://tourism.gov.mm/embassies-missions/myanmar-missions/">Embassies</a></span>
+                    <br>
+                    <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                    <span><a href="https://tourism.gov.mm/traveller-tips/">Traveller Tips</a></span>
+                    <br>
+                    <i class="fa-solid fa-arrow-right-from-bracket vital_item"></i>
+                    <span><a href="https://tourism.gov.mm/articles/">Articles</a></span>
+                    
+                </div>
+                
+           </div>
+           <div class="row">
+                <div class="col-md-4 offset-md-4  social_item">
+                  
+                  <a href="https://www.facebook.com/moht.mm">
+                      <i class="fa-brands fa-facebook share_item"></i>
+                  </a>
+                  <a href="https://www.youtube.com/user/mohtmm">
+                      <i class="fa-brands fa-youtube share_item"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/mohtmm">
+                      <i class="fa-brands fa-linkedin-in share_item"></i>
+                  </a>
+                  <a href="https://www.instagram.com/tourisminmyanmar.com.mm/">
+                      <i class="fa-brands fa-instagram share_item"></i>
+                  </a>
+              </div>
+           </div>
+           <div class="row reference">
+              <div class="col-md-4 offset-md-4">
+                  <p>
+                    According to the Ministry of Hotels and Tourism(Myanmar) <br>
+                    <a href="https://tourism.gov.mm/"><i>https://tourism.gov.mm/</i></a>
+                  </p>
+                  
+              </div>
+           </div>
+        </div>
+  </footer>
+     
+</body>
+</html>

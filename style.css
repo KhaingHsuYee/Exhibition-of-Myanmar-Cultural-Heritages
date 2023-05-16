@@ -1,0 +1,1496 @@
+/*------------  HOME PAGE ------------------*/
+
+    /* ---------------SIDE_NAVIGATION */
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+#home .logo{
+  text-decoration: none;
+  font-weight: bold;
+ position: absolute;
+ top: 15px;
+ color: #bfce18;
+ font-size: 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 36px 8px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  /* margin-right: 240px; */
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;}
+  .sidenav a {
+        font-size: 18px;}
+  
+}
+#home .content_title{
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#home .content_p{
+  font-size: 18px;
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+}
+/* -------------------IMAGE_GALLERY SLIDESHOW -------------------------*/
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    .bg_img {vertical-align: middle;
+        
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+        width: 100%;
+        
+        /* max-width: 1000px; */
+        position: relative;
+        margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    #home .active{
+        background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 5s;
+    }
+    
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+    }
+     
+
+nav{
+  background-color: #fff;
+  color: #000;
+  height: 60px;
+}
+.hero_title{
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 5em;
+  color: #bbb;
+}
+.hero_subtitle{
+  font-weight: bold;
+  color: #000;
+}
+.hero_btn{
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 300px;
+  transition: background-color,color 1s ease-in;
+  font-weight: bold;
+  border: 1px solid #fff;
+  letter-spacing: 3px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hero_btn:hover{
+  background-color: transparent;
+  color: #fff;
+  border-color: #000;
+  
+}
+.img_responsive{
+  width: 100%;
+  height: auto;
+}
+
+.menu_img{
+  position: relative;
+  padding: 0;
+}
+.menu_img img{
+  height: 240px;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.menu_img:hover .overlay {
+  opacity: 1;
+}
+/* ------------------------------------------------------Footer----------------------------------------------------------------- */
+footer{
+  color: #fff;
+  background-color: #000;
+  padding: 50px 0;
+  font-size: 20px;
+  margin-top: 50px;
+  line-height: 200%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.vital a{
+  color: #fff;
+  text-decoration: none;
+  /* display: block; */
+  padding-bottom: 5px;
+  transition: color 2s ease-in;
+}
+.vital a:hover{
+  color: #b8a40f;
+}
+footer h3{
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #f5db15;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+footer .info_item,.vital_item{
+  color: #bfce18;
+  margin-right: 10px;
+  font-size: 20px;
+ 
+}
+footer .social_item{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+footer .share_item{
+  margin-top: 20px;
+  font-size: 30px;
+  margin-right: 10px;
+  border-radius: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  opacity: 0.4;
+  transition: opacity 1.5s ease-in-out;
+}
+footer .share_item:hover{
+  opacity: 1;
+
+}
+.footer_header{
+  color: #bfce18;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+footer .reference{
+  font-size: 12px;
+}
+/*--------------CHILD_PAGES ' NAVIGATION BAR----------------------*/
+body {margin:0;font-family:Arial}
+
+.topnav {
+  width: 100%;
+  /* overflow: hidden; */
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ font-weight: bold;
+ background-color: #bbb;
+}
+
+.topnav .active {
+  background-color: #b8a40f !important;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropDown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropDown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 14px 16px;
+  background-color: #bbb;
+  font-family: inherit;
+  margin: 0;
+  text-align:center;
+}
+.dropDown .dropbtn a{
+display:block;
+padding:0 14px;
+background-color: #bbb;
+}
+.dropDown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropDown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.topnav a:hover, .dropDown:hover .dropbtn ,.dropDown:hover .dropbtn a{
+  background-color: #333;
+  color: white;
+  /* text-decoration: none; */
+}
+
+.dropDown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.sticky_top{
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.dropDown:hover .dropDown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropDown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropDown {float: none;}
+  .topnav.responsive .dropDown-content {position: relative;}
+  .topnav.responsive .dropDown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    
+  }
+  .topnav.responsive .dropDown .dropbtn a{
+  display:inline;
+  padding:0;
+ }
+}
+/*--------------------------FOOD PAGE---------------------------------------*/
+
+
+/* NAVIGATION & HERO */
+#food .hero{
+  background-image: url(images/food_bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 280px 0;
+  /* color: #010a0a; */
+  background-size: cover;
+  font-family: serif;
+  background-position:  center right;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+#food .hero_title{
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bolder;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing:3px;
+}
+#food .content_title{
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+}
+#food .content_description{
+  color: #555;
+  line-height: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+#food .img_rounded{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+#food .mean_link{
+  font-weight: bold;
+  /* font-size: 30px; */
+}
+#food  .food_title{
+  margin-top: 20px;
+}
+#food  .food_title a{
+  text-decoration: none;
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+  transition: color 1s ease-in-out;  
+}
+#food  .food_title a:hover{
+  color: #bfba55;
+}
+#food .food_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #777;
+  margin: 20px 0;
+}
+/* -------------------------------------Food Page's Meal Page--------------------------------- */
+#meal .hero{
+  background-image: url(images/mohinga-myanmar-food-sanctum-inle-resort.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 280px 0;
+  /* color: #010a0a; */
+  background-size: cover;
+  font-family: serif;
+  background-position:  center bottom;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#meal .hero_title{
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+#meal .content_title{
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#meal .content_description{
+  font-size: 18px;
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+}
+#meal .meal_item{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#meal .meal_description{
+  font-size: 16px;
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+/* -------------------------------------Food Page's Snack Page--------------------------------- */
+#snack .hero{
+  background-image: url(images/food_snack_img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 280px 0;
+  /* color: #010a0a; */
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#snack .hero_title{
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+#snack .content_title{
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#snack .content_description{
+  font-size: 18px;
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+}
+#snack .snack_item{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#snack .snack_description{
+  font-size: 16px;
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+/* ---------------------------------------For FAQs PAGE ---------------------------------------*/
+#FAQs .hero{
+  background-image: url(images/FAQs_bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 230px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center right;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#FAQs .hero_title{
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+#FAQs .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#FAQs .active, .accordion:hover {
+  background-color: #ccc;
+}
+
+#FAQs .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+#FAQs .active:after {
+  content: "\2212";
+}
+
+#FAQs .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  line-height: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.question_form {
+  margin-top: 40px;
+}
+
+#FAQs input{
+  height: 50px;
+}
+#FAQs .form-control{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #f0f0f0;
+  box-shadow: none;
+  transition: border-color 1s ease-in-out;
+  font-family: 'Lora', serif;
+  outline: none;
+  
+}
+#FAQs .form-control:hover{
+  border-color: #555;
+}
+#FAQs input[type="submit"]{
+  background-color: #bfba55;
+  border-radius: 100px;
+ color: #fff;
+ font-weight: bold;
+ transition-property: background-color,color;
+ transition: 1s ease-in-out;
+}
+#FAQs input[type="submit"]:hover{
+  background: transparent;
+  color: #333;
+}
+/*-------------------------------- About_us Page----------------------- */
+#about_us .hero{
+  background-image: url(images/utycc.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 230px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  top center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#about_us .page_description{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 2em;
+  color: #333;
+  font-size: 20px;
+}
+#about_us .page_description h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+#about_us .img_rounded{
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+}
+#about_us .profile_info{
+  list-style-type: none;
+  position: relative;
+  
+}
+#about_us .profile_info li{
+  padding: 10px;
+}
+#about_us .profile_info li i{
+  padding-right: 20px;
+  font-size: 25px;
+}
+#about_us .profile_name{
+  
+  font-weight: bold;
+  padding-left: 50px;
+}
+#about_us .hero_title{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 90px;
+}
+#about_us .content_title{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* ---------------------------For BAGAN PAGE------------------------------------ */
+#Bagan .content_title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#Bagan p{
+  color: #777;
+  line-height: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+#Bagan .content_subtitle{
+  margin-top: 70px;
+  text-align: center;
+  color: #bfce18;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#Bagan .list_img{
+  height: 300px;
+  margin-bottom: 20px;
+}
+#Bagan .destination_list h4{
+  font-weight: bold;
+  font-style: italic;
+  color: #741010;
+}
+/* --------------------------------------------MANDALAY PAGE-------------------------------- */
+#Mandalay .content_title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#Mandalay p{
+  color: #777;
+  line-height: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+#Mandalay .content_subtitle{
+  margin-top: 70px;
+  text-align: center;
+  color: #bfce18;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#Mandalay .list_img{
+  height: 300px;
+  margin-bottom: 20px;
+}
+#Mandalay .destination_list h4{
+  font-weight: bold;
+  font-style: italic;
+  color: #741010;
+}
+#Mandalay .img_rounded{
+  
+  border-radius: 200px;
+}
+/*---------------------------Yangon Page------------------------------------*/
+#Yangon .content_title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#Yangon p{
+  color: #777;
+  line-height: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+#Yangon .content_subtitle{
+  margin-top: 70px;
+  text-align: center;
+  color: #bfce18;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#Yangon .list_img{
+  height: 300px;
+  margin-bottom: 20px;
+}
+#Yangon .destination_list h4{
+  font-weight: bold;
+  font-style: italic;
+  color: #741010;
+}
+/* -----------------------------------------For DESTINATION PAGE ----------------------------------------*/
+#destinations .hero{
+  background-image: url(images/Sagaing.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center bottom;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#destinations .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #000;
+}
+#destinations .dest_list{
+  margin-top: 100px;
+}
+#destinations .dest_list img{
+  height: 500px;
+}
+#destinations .dest{
+  margin-bottom: 50px;
+}
+#destinations  .dest_title{
+  margin: 20px 0;
+}
+#destinations  .dest_title a{
+  text-decoration: none;
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+  transition: color 1s ease-in-out;
+  
+}
+#destinations .dest_list .dest_title a:hover{
+  color: #bfba55;
+}
+#destinations .dest_list p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #777;
+  margin: 20px 0;
+}
+#destinations .dest_btn{
+  background: transparent;
+  padding: 15px 10px;
+  border-radius: 100px;
+  color: #777;
+ font-weight: bold;
+ letter-spacing: 1px;
+ transition-property: background-color,color;
+ transition: 1s ease-in-out;
+}
+#destinations .dest_btn:hover{
+  background-color: #bfba55;
+  color: #fff;
+}
+/* -------------------------------------------FOR COSTUMES PAGE------------------------------------ */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Burmese Meal Menu */
+.meal_item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#costumes .hero{
+  background-image: url(images/costumes_bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#costumes .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#costumes .main_title{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #a90e0e;
+}
+#costumes .img_gallery{
+  margin-top: 90px;
+}
+#costumes .gallery_item{
+  margin-bottom: 20px;
+}
+#costumes p{
+  line-height: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+#costumes .gallery_p{
+  font-weight: bold;
+  color: #d83510;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+#costumes .content_subtitle{
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#costumes .content_description{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+
+}
+/*-------------------------------- FESTIVAL PAGE-------------------------------- */
+#festivals .hero{
+  background-image: url(images/October\ Festivals.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#festivals .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#festivals .festival_item h3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+#festivals .festival_item p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+#festivals .img_gallery{
+  margin-top: 50px;
+}
+#festivals .content_title{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#festivals .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 19px;
+
+}
+/* -----------------------------------------Products Page----------------------------------------------- */
+#products .hero{
+  background-image: url(images/localproductimg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#products .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#products .content_title{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#products .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 19px;
+
+}
+#products .title,.subtitle{
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#products .img_rounded{
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+}
+#products .link_title{
+  
+  text-align: center;
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+#products .link_title a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #111;
+}
+/*----------------------------------------- Product:Arts and crafts Page--------------------------------- */
+#arts_and_crafts .hero{
+  background-image: url(images/yunmm.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#arts_and_crafts .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#arts_and_crafts .content_title{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#arts_and_crafts .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 19px;
+
+}
+#arts_and_crafts .title,.subtitle{
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#arts_and_crafts .subtitle{
+  font-size: 20px;
+}
+#arts_and_crafts .img_gallery{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#arts_and_crafts p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+#arts_and_crafts .img_carousel_title{
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* ---------------------------------For Potterty & Others Page--------------------------------- */
+#pottery_others .hero{
+  background-image: url(images/potbig.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#pottery_others .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+
+#pottery_others .title,.subtitle{
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#pottery_others .subtitle{
+  font-size: 20px;
+}
+#pottery_others .img_gallery{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#pottery_others p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+/*--------------------------------- For Gold,Silverware&EmbroideryPage----------------------------- */
+#g_silverware .hero{
+  background-image: url(images/embroidimg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#g_silverware .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+
+#g_silverware .title,.subtitle{
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+#g_silverware .subtitle{
+  font-size: 20px;
+}
+#g_silverware .img_gallery{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#g_silverware p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+/* -----------------------------For Jewellery Page--------------------------------------------- */
+#jewellery .hero{
+  background-image: url(images/Jewellery/amberbrc1.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:   center top;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#jewellery .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#jewellery .content_title{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#jewellery .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 19px;
+
+}
+#jewellery .title,.subtitle{
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#jewellery .subtitle{
+  margin-top: 0;
+  font-size: 20px;
+}
+
+#jewellery p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+#jewellery .img_carousel img{
+  margin-top: 40px;
+}
+/*----------------------------- For Pyin Oo Lwin Page------------------------------------------ */
+
+
+#PyinOoLwin .content_title{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#PyinOoLwin .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 19px;
+}
+#PyinOoLwin .place_title{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#PyinOoLwin .place_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+
+}
+#PyinOoLwin .two_places{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* ------------------------------For Shan State-------------------------------------------- */
+#Shan .hero{
+  background-image: url(images/inlaylake.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#Shan .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#Shan .content_title{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Shan .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 19px;
+}
+#Shan .place_title{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Shan .place_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+
+}
+#Shan .two_places{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* -------------------------------------------For Kachin Page----------------------------------------- */
+#Kachin .hero{
+  background-image: url(images/putao.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#Kachin .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#Kachin .content_title{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Kachin .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 19px;
+}
+#Kachin .place_title{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Kachin .place_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+
+}
+#Kachin .two_places{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* ---------------------------------------------For Rakhine Page --------------------------------------------*/
+#Rakhine .hero{
+  background-image: url(images/Sakya\ Man\ Aung\ 3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#Rakhine .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#Rakhine .content_title{
+  font-weight: bold;
+  font-size: 38px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Rakhine .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#Rakhine .place_title{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Rakhine .place_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 10px;
+
+}
+#Rakhine .place{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* -----------------------------------------For Kayin Page----------------------------------------- */
+#Kayin .hero{
+  background-image: url(images/Bat\ Cave\ 1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#Kayin .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #ccc;
+}
+#Kayin .content_title{
+  font-weight: bold;
+  font-size: 38px;
+  margin-top: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Kayin .content_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#Kayin .place_title{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Kayin .place_p{
+  line-height: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 10px;
+
+}
+#Kayin .place{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/*------------------------------ For gallery Page----------------------------------------------- */
+#gallery .hero{
+  background-image: url(images/haipawaterfall.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 300px 0;
+  background-size: cover;
+  font-family: serif;
+  background-position:  center;
+  /* opacity: 0.6; */
+  margin-bottom: 20px;
+}
+#gallery .hero_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  color: #fff;
+}
+#gallery .tab_bar {
+  width: 100%;
+  overflow: hidden;
+  background-color: #c4edf3;
+  
+}
+
+#gallery .tab_bar  a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ font-weight: bold;
+ transition: background-color 2s ease,color 1s ease-in-out;
+ 
+}
+#gallery .tab_bar  a:hover{
+  background-color: #b8a40f;
+  color: #fff;
+}
